@@ -16,4 +16,4 @@ FLAGS+=' --extra-ldflags=-static'
 FLAGS+=' --pkg-config-flags=--static'
 FLAGS+=" --prefix=$loc"
 ./configure $FLAGS || echo "::set-output name=conf::false"
-echo "FUCK SHIT SHELL SCRIPT"
+echo $?
