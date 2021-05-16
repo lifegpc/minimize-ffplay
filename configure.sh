@@ -2,23 +2,17 @@
 loc=`pwd`/ffbuild
 mkdir -p ffbuild
 cd ffmpeg
-./configure \
-	--disable-doc \
-	--disable-encoders \
-	--disable-ffmpeg \
-	--disable-ffprobe \
-	--disable-muxers \
-	--enable-gpl \
-	--enable-gmp \
-	--enable-gnutls \
-	--enable-small \
-	--enable-version3 \
-	'--extra-ldflags=-static' \
-	'--pkg-config-flags=--static' \
-	--prefix=$loc
-if [ $? -ne 0 ]
-then 
-	echo "::set-output name=conf::false"
-else
-	echo "::set-output name=conf::true"
-fi
+FLAGS=--disable-doc
+FLAGS+=' --disable-encoders'
+FLAGS+=' --disable-ffmpeg'
+FLAGS+=' --disable-ffprobe'
+FLAGS+=' --disable-muxers'
+FLAGS+=' --enable-gpl'
+FLAGS+=' --enable-gmp'
+FLAGS+=' --enable-gnutls'
+FLAGS+=' --enable-small'
+FLAGS+=' --enable-version3'
+FLAGS+=' --extra-ldflags=-static'
+FLAGS+=' --pkg-config-flags=--static'
+FLAGS+=" --prefix=$loc"
+./configure $FLAGS || echo "::set-output name=conf::false"
