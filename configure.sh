@@ -17,4 +17,3 @@ FLAGS+=' --pkg-config-flags=--static'
 FLAGS+=" --prefix=$loc"
 ./configure $FLAGS
 echo $?
-if ! test -f config.h; then echo "::set-output name=conf::false"; fi
