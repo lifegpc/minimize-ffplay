@@ -11,10 +11,6 @@ cd ffmpeg
 	--enable-gpl \
 	--enable-gmp \
 	--enable-gnutls \
-    # --enable-libass \
-    # --enable-libfontconfig \
-    # --enable-libfreetype \
-    # --enable-libfribidi \
 	--enable-small \
 	--enable-version3 \
 	'--extra-ldflags=-static' \
