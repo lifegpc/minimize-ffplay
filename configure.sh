@@ -16,6 +16,5 @@ FLAGS+=' --enable-version3'
 FLAGS+=' --extra-ldflags=-static'
 FLAGS+=' --pkg-config-flags=--static'
 FLAGS+=" --prefix=$loc"
-CXXFLAGS="-DIN_LIBXML"
-./configure $FLAGS --extra-cxxflags=$CXXFLAGS
+./configure $FLAGS
 echo $?
