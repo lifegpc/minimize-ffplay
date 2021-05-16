@@ -16,4 +16,5 @@ FLAGS+=' --extra-ldflags=-static'
 FLAGS+=' --pkg-config-flags=--static'
 FLAGS+=" --prefix=$loc"
 ./configure $FLAGS
+echo $?
 if ! test -f ffmpeg/config.h; then echo "::set-output name=conf::false"; fi
