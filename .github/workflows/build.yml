@@ -30,7 +30,7 @@ jobs:
         with:
           msystem: MINGW64
           update: true
-          install: base-devel git mingw64/mingw-w64-x86_64-curl mingw64/mingw-w64-x86_64-gcc mingw64/mingw-w64-x86_64-diffutils mingw64/mingw-w64-x86_64-pkg-config mingw64/mingw-w64-x86_64-nasm
+          install: base-devel git mingw64/mingw-w64-x86_64-curl mingw64/mingw-w64-x86_64-gcc mingw64/mingw-w64-x86_64-diffutils mingw64/mingw-w64-x86_64-pkg-config mingw64/mingw-w64-x86_64-nasm mingw64/mingw-w64-x86_64-SDL2 p7zip
 
       - name: Setup
         run: ./setup.sh
@@ -41,7 +41,7 @@ jobs:
       - name: Upload ffbuild/config.log
         uses: actions/upload-artifact@v2
         with:
-          name: Configure
+          name: Configure.log
           path: ffmpeg/ffbuild/config.log
   
       - name: Build
@@ -51,4 +51,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: install-file
-          path: ffbuild/
+          path: ffbuild.7z
