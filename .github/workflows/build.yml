@@ -36,19 +36,13 @@ jobs:
         run: ./setup.sh
 
       - name: Configure
-        id: conf
         run: ./configure.sh
 
-      - name: Upload ffbuild/config.log if configure error
-        if: steps.conf.outputs.conf == false
+      - name: Upload ffbuild/config.log
         uses: actions/upload-artifact@v2
         with:
           name: Configure
           path: ffmpeg/ffbuild/config.log
-
-      - name: Exit build if configure error
-        if: steps.conf.outputs.conf == false
-        run: exit 1
   
       - name: Build
         run: ./build.sh
