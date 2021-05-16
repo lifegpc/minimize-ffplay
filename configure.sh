@@ -15,5 +15,5 @@ FLAGS+=' --enable-version3'
 FLAGS+=' --extra-ldflags=-static'
 FLAGS+=' --pkg-config-flags=--static'
 FLAGS+=" --prefix=$loc"
-./configure $FLAGS || echo "::set-output name=conf::false"
-echo $?
+./configure $FLAGS
+if ! test -f ffmpeg/config.h; then echo "::set-output name=conf::false"; fi
