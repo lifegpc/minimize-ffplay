@@ -30,7 +30,7 @@ jobs:
         with:
           msystem: MINGW64
           update: true
-          install: base-devel git mingw64/mingw-w64-x86_64-curl mingw64/mingw-w64-x86_64-gcc mingw64/mingw-w64-x86_64-diffutils mingw64/mingw-w64-x86_64-pkg-config mingw64/mingw-w64-x86_64-nasm mingw64/mingw-w64-x86_64-SDL2 mingw64/mingw-w64-x86_64-libxml2 p7zip
+          install: base-devel git mingw64/mingw-w64-x86_64-curl mingw64/mingw-w64-x86_64-gcc mingw64/mingw-w64-x86_64-diffutils mingw64/mingw-w64-x86_64-pkg-config mingw64/mingw-w64-x86_64-nasm mingw64/mingw-w64-x86_64-SDL2 p7zip
 
       - name: Setup
         run: ./setup.sh
