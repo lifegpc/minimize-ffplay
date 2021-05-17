@@ -4,6 +4,7 @@ LIBXML2=libxml2.pkg.tar.zst
 BROTLI=brotli.pkg.tar.zst
 HARFBUZZ=harfbuzz.pkg.tar.zst
 FONTCONFIG=fontconfig.pkg.tar.zst
+FREETYPE=freetype.pkg.tar.zst
 curl "https://github.com/lifegpc/static-mingw-w64-gnutls/releases/download/3.7.1-1/mingw-w64-x86_64-gnutls-3.7.1-1-any.pkg.tar.zst" -o $GNUTLS -L || exit 1
 pacman -U $GNUTLS $SETUPFLAGS || exit 1
 curl "https://github.com/lifegpc/static-mingw-w64-libxml2/releases/download/2.9.12-1/mingw-w64-x86_64-libxml2-2.9.12-1-any.pkg.tar.zst" -o $LIBXML2 -L || exit 1
@@ -14,3 +15,5 @@ curl "https://github.com/lifegpc/static-mingw-w64-harfbuzz/releases/download/2.8
 pacman -U $HARFBUZZ $SETUPFLAGS || exit 1
 curl "https://github.com/lifegpc/static-mingw-w64-fontconfig/releases/download/2.13.93-3/mingw-w64-x86_64-fontconfig-2.13.93-3-any.pkg.tar.zst" -o $FONTCONFIG -L || exit 1
 pacman -U $FONTCONFIG $SETUPFLAGS || exit 1
+curl "https://github.com/lifegpc/static-mingw-w64-freetype/releases/download/2.10.4-2/mingw-w64-x86_64-freetype-2.10.4-2-any.pkg.tar.zst" -o $FREETYPE -L || exit 1
+pacman -U $FREETYPE $SETUPFLAGS || exit 1
