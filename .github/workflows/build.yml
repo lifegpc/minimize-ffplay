@@ -32,6 +32,7 @@ jobs:
           update: true
           install: >-
             base-devel
+            brotli-devel
             git
             p7zip
             mingw64/mingw-w64-x86_64-brotli
