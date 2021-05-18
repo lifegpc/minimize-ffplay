@@ -39,6 +39,7 @@ jobs:
             mingw64/mingw-w64-x86_64-diffutils
             mingw64/mingw-w64-x86_64-gcc
             mingw64/mingw-w64-x86_64-libass
+            mingw64/mingw-w64-x86_64-libssh
             mingw64/mingw-w64-x86_64-nasm
             mingw64/mingw-w64-x86_64-pkg-config
             mingw64/mingw-w64-x86_64-SDL2
