@@ -38,6 +38,7 @@ jobs:
             mingw32/mingw-w64-i686-curl
             mingw32/mingw-w64-i686-diffutils
             mingw32/mingw-w64-i686-gcc
+            mingw32/mingw-w64-i686-libass
             mingw32/mingw-w64-i686-nasm
             mingw32/mingw-w64-i686-pkg-config
             mingw32/mingw-w64-i686-SDL2
