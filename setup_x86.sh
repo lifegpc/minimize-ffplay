@@ -17,7 +17,7 @@ curl "https://github.com/lifegpc/static-mingw-w64-harfbuzz/releases/download/2.8
 pacman -U $HARFBUZZ $SETUPFLAGS || exit 1
 curl "https://github.com/lifegpc/static-mingw-w64-fontconfig/releases/download/2.13.93-3/mingw-w64-i686-fontconfig-2.13.93-3-any.pkg.tar.zst" -o $FONTCONFIG -L || exit 1
 pacman -U $FONTCONFIG $SETUPFLAGS || exit 1
-curl "https://github.com/lifegpc/static-mingw-w64-freetype/releases/download/2.10.4-2/mingw-w64-i686-freetype-2.10.4-2-any.pkg.tar.zst" -o $FREETYPE -L || exit 1
+curl "https://github.com/lifegpc/static-mingw-w64-freetype/releases/download/2.10.4-3/mingw-w64-i686-freetype-2.10.4-3-any.pkg.tar.zst" -o $FREETYPE -L || exit 1
 pacman -U $FREETYPE $SETUPFLAGS || exit 1
 curl "https://github.com/lifegpc/static-mingw-w64-fribidi/releases/download/1.0.10-2/mingw-w64-i686-fribidi-1.0.10-2-any.pkg.tar.zst" -o $FRIBIDI -L || exit 1
 pacman -U $FRIBIDI $SETUPFLAGS || exit 1
